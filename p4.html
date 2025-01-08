@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project 4</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="nav">
+      <h1>Advanced Critical Computation 2025</h1>
+      <ul>
+        <li>
+            <!-- TODO: Add proper link to syllabus -->
+          <a
+            href=""
+            target="blank"
+            >Syllabus</a
+          >
+        </li>
+        <li>
+            Projects
+            <a href="p1.html">#1</a>
+            <a href="p2.html">#2</a>
+            <a href="p3.html">#3</a>
+            <a href="p4.html">#4</a>
+            <a href="p5.html">#5</a>
+        </li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="students.html">Students</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Project #4 Community Tool or Quiz</h1>
+      <div class="full-width-box">
+        <img
+          style="width: 60%; padding-right: 35%; height: auto"
+          src="https://parsonsdt.github.io/Advanced-Critical-Computation-2022/assignment/wage.png"
+        /><br /><br /><a></a>
+      </div>
+      <a
+        style="
+          width: 50%;
+          top: -20px;
+          position: relative;
+          display: block;
+          height: 50%;
+        "
+        href="https://carolinesinders.com/trk/"
+        >Image from Caroline Sinders - Wage Calculator</a
+      >
+
+      <h2>Description</h2>
+
+      <p>
+        For project 4, you will be tasked with using HTML/CSS and Javascript, to
+        create an interactive quiz or tool!<br /><br />
+
+        While your quiz or tool can be about anything, it must center a specific
+        group/demographic/community and providing some kind of experience or
+        opportunity to the group. You can choose to define that community and
+        what it means for you, on your own terms. Just be sure and explicit
+        about who it is for, and why you’re making it.<br /><br />
+
+        It is best to center a group that you have DIRECT relationships with and
+        not make assumptions about other groups. Nevertheless, we encourage you
+        to research your chosen group as to not solely rely on your own lived
+        experiences and assumptions about what the potential need or opportunity
+        may be. You’ll want to define the challenge and use your quiz or tool as
+        potential, feasible solution that addresses some or all of that
+        challenge.
+        <br /><br />
+        Technical Requirements:<br /><br />
+
+        (1) Your Quiz should have at least 8 questions<br />
+        (2) Have user input through form elements and event handlers (think:
+        buttons!)<br />
+        (3) Store user input using local storage<br />
+        (4) Taking those locally stored answers and using them to change aspects
+        of the webpage<br />
+        (5) Work locally with HTML, CSS and Javascript<br />
+        (6) Store your code cleanly in a Github Repository<br />
+        (7) Testing and documenting your quiz with users<br />
+        (8) Have a well documented README.md file highlighting your design
+        process, inspiration and references, challenges you faced and next steps
+        for the project if you had more time to complete it and create a second
+        version.
+        <br />
+      </p>
+
+      <h2>Optional Reading</h2>
+      <p>
+        (1)
+        <a
+          href="https://pioneerworks.org/broadcast/caroline-sinders-in-defense-of-useful-art"
+          >On Useful Art
+        </a>
+      </p>
+
+      <h2>Resources</h2>
+      <p>
+        (1)
+        <a href="https://www.w3schools.com/js/DEFAULT.asp"
+          >w3 schools Javascript tutorial</a
+        >
+        <br />
+        (2)
+        <a href="https://www.w3schools.com/css/">w3 schools CSS tutorial</a>
+        <br />
+        (3)
+        <a href="https://www.w3schools.com/html/">w3 schools HTML tutorial</a>
+        <br />
+        (4)
+        <a
+          href="https://www.quackit.com/javascript/javascript_event_handlers.cfm"
+          >Event Handlers</a
+        >
+        <br />
+      </p>
+      <h2>Timeline & Deliverables</h2>
+      <p>
+        March 7/8: Project 4 Prototype
+
+        <br />
+        <br />
+
+        March 21/22: Check in
+        <br />
+        <br />
+
+        March 28/29: Project 4 Due
+      </p>
+
+      <h2>Submission Guidelines</h2>
+      <p>
+        Submit proposal and white-boxed version of your project to glitch
+        <br />
+        Submit your finalized sketch to glitch and canvas
+      </p>
+
+      <h2>Design Constraints</h2>
+      <p>
+        (1) You must have at least 4 different pages <br />
+        (2) Your website must be online <br />
+        (3) Your website must rely on HTML, CSS &amp JS (no libraries) <br />
+      </p>
+
+      <br/>
+      <br/>
+      
+      <h1>Study Guide</h1>
+
+      <h2>Table of Content</h2>
+      <p>
+        (1) <a href="#js">Javascript Basics</a><br />
+        (2) <a href="#query">Document Query Selector</a><br />
+      </p>
+<br/>
+      
+      <div id="js"><h2>Javascript Basics</h2></div>
+      <p>
+        Using vanilla Javascript can seem really intimidating at first to new
+        learners. What we have been learning already, p5, is a library that is
+        built off of Javascript. The advantage of using p5 is that there are
+        many functions already built into the library so you don’t have to write
+        out the code for them. When writing vanilla Javascript you may have to
+        take extra steps to write code that you wouldn’t have to before. Much of
+        the language overlaps though and building on top of the knowledge you
+        already have you will be able to write Javascript without any worries!
+      </p>
+      <p>
+        When creating your own Javascript file you will just need to name it
+        whatever you want and make sure it ends with the extension .js . You
+        will then want to add your file to your HTML by adding the line
+        <code>&lt;script src="myScript.js"&gt;&lt;/script&gt;</code>
+        in your body tag. We are going to introduce ourselves to JS by
+        creating a button that will console log “Hello World”.
+      </p>
+      <p>
+        First we need to add the below line of code into our html body tag to
+        create a button. Which will show up like the image below, you can style
+        your button however you want in CSS by giving it an ID. The button below
+        I have added padding to so we can see it more clearly.
+      </p>
+      <script src="https://gist.github.com/lizard-ctrl/27db99e6dc1a490ee87b997e9268281d.js"></script>
+      <div class="full-width-box">
+        <img
+          src="imgs/clickMe.png"
+        />
+      </div>
+      <p>
+        Now without any Javascript written when you click the button nothing
+        will happen. This is where we will write our own vanilla Javascript
+        function. Functions are written the same way as they are in p5, and you
+        can use the template below as a starting point.
+      </p>
+      <script src="https://gist.github.com/lizard-ctrl/13d5f5c5e9342f534ab3975e131c96e0.js"></script>
+      <p>
+        To create our function that will console.log “Hello World” for us we are
+        going to write this:
+      </p>
+      <script src="https://gist.github.com/lizard-ctrl/bd9f3e49ae0baa9f4290db8d955abd10.js"></script>
+      <p>
+        To connect this function to our button we need to add a bit more code to
+        our HTML line.
+      </p>
+      <p>
+        onclick is an example of an event handler that we can define in html to
+        run a function when an element is clicked, it does not have to be a
+        button. There are many different types of event handlers that you can
+        explore using and learn about on the site
+        https://www.quackit.com/javascript/javascript_event_handlers.cfm . In
+        the quotations that follow we connect it to the function we created
+        “helloWorld()”. Now when you press the button you should see the “Hello
+        World” in the console log.
+      </p>
+      <div class="full-width-box">
+        <img
+        style="height: 100px"
+          src="imgs/helloWorld.png"
+        />
+      </div>
+
+      <div id="query"><h2>Document Query Selector</h2></div>
+      <p>
+        Document Query Selector is a Javascript method that returns the first
+        element that matches a CSS selector. This can allow us to dynamically
+        change something in a document by finding elements with the selector and
+        changing them within a Javascript function. We will be using the button
+        we created in our intro to Javascript to create a function that grabs a
+        div with selector and changes its color.
+      </p>
+      <p>You can insert your div first by using the following code:</p>
+      <script src="https://gist.github.com/lizard-ctrl/f58667b714fafe560d94a7ce8ef3dea4.js"></script>
+      <script src="https://gist.github.com/lizard-ctrl/09f95fd2ff8fb0532c2837dd3f7549c5.js"></script>
+      <p>Which will leave you with this result to start:</p>
+      <div class="full-width-box">
+        <img
+          src="imgs/helloWorldClickMe.png"
+        />
+      </div>
+      <p>
+        Now we can start looking at our Javascript again and creating a function
+        that will change our divs background color. Below is the code we will
+        use to start.
+      </p>
+      <script src="https://gist.github.com/lizard-ctrl/22aa573a0bcfe9c9ce28eda6af86c135.js"></script>
+      <p>
+        This shows a function that looks for your div id, “#myDiv”, and then
+        will console log what it finds so we can double check that it is
+        selecting the correct element. The selector will search the entire page
+        for an element that matches and then will return it in the log. To allow
+        this function to work you will have to change the function that is
+        running in your html to onclick = ”changeColor()”. You will be able to
+        see this in your console now:
+      </p>
+      <div class="full-width-box">
+        <img
+        style="height: 150px"
+          src="imgs/logDiv.png"
+        />
+      </div>
+      <p>
+        To change the divs background color on click you will need to add this
+        line in your Javascript function underneath what we’ve already written.
+      </p>
+      <script src="https://gist.github.com/lizard-ctrl/826d291b53ce3f3f5cb573930f9894ca.js"></script>
+      <p>
+        This allows our function to look within the html file to find your div
+        and change the styles background color to “red”. You can expand on this
+        further by adding boolean statements to your function to toggle back and
+        forth.
+      </p>
+      <div class="full-width-box">
+        <img
+          src="imgs/helloWorldColorChange.gif"
+        />
+      </div>
+<!--       <a href="https://editor.p5js.org/lizardctrl/sketches/DjKycx0Hu"
+        >Link to Source Code</a
+      > -->
+      <p>
+        You can use the document query selector to select anything on your html
+        file and change its style in whatever way that you want to. You can do
+        many different creative stylings with it!
+      </p>
+    </div>
+  </body>
+</html>
