@@ -59,7 +59,7 @@ p {
   position:fixed;
   padding: 2%;
   width: 26%;
-  height: 100%;
+  top: 0; bottom: 0;
   display: inline-block;
   float: left;
 }
@@ -95,7 +95,6 @@ li.bullet a {
 
 li a {
   color: #E82E21;
-  /*   text-decoration: none; */
 }
 
 iframe {
@@ -220,8 +219,6 @@ canvas {
 .grid-container {
   display: grid;
   grid-template-columns: 200px 200px 200px;
-/*   background-color: #2196F3; */
-/*   padding: 10px; */
 }
 
 .grid-item {
