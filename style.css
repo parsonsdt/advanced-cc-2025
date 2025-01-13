@@ -1,16 +1,22 @@
-/* CSS files add styling rules to your content */
-
-@import url("https://fonts.googleapis.com/css?family=Inconsolata");
-
 body {
-  font-family: "Inconsolata", monospace;
   margin: 2em;
   width: 100%;
   height: 100%;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+a {
+  color: #E82E21;
+}
+
+a:hover {
+  color: #000;
 }
 
 h1 {
-  color: #373fff;
+  color: #E82E21;
   font-size: 18pt;
 }
 
@@ -84,11 +90,11 @@ li.bullet {
 }
 
 li.bullet a {
-  color: blue;
+  color: #E82E21;
 }
 
 li a {
-  color: black;
+  color: #E82E21;
   /*   text-decoration: none; */
 }
 
@@ -182,7 +188,7 @@ body .gist .gist-meta {
 
 @media only screen and (max-width: 600px) {
   body {
-    font-family: "Inconsolata", monospace;
+    /* font-family: "Inconsolata", monospace; */
     margin: 1%;
     width: 98%;
     height: 100%;
