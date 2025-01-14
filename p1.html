@@ -37,8 +37,507 @@
     </div>
 
     <div class="content">
-      <h1>Project #1 - Portfolio 2.0</h1>
-      <p>Coming soon...</p>
+      <h1>Project #1 - Portfolio Website 2.0</h1>
+      <div class="full-width-box no-margin">
+        <img
+          src="https://cdn.glitch.global/00ec483d-7fc5-4281-9249-07af191bdb0f/intermediate_space.jpg?v=1736878158734"
+        />
+      </div>
+      <p><b>The Idea of Intermediate Space, Achille Perilli</b></p>
+
+      <h2>Description</h2>
+
+      <p>
+        In CC Lab we created a portfolio website to showcase our projects, as well as our design and development skills. As an introduction to HTML and CSS the expectation from last semester's website was to learn and familiarize oursevles with the languages. Now that we've gained a bit of experience we are going to take our portfolio's to the next level design-wise. For project 1, you will take the portfolio you created last year and improve upon it. A very important element of software development is iterating and imporving upon existing code by writing newer versions of it. The same way many of the applications/programs on your phone or laptop are updated regularly, so can the software you create. The focus for this version of your portfolio will be to mainly utilize CSS Grid and Flexbox to build your website. 
+        <br />
+        <br />
+        You should already have an exisiting portfolio from the fall semster so essentially you will be revisiting that codebase and making the changes based on this assignments requirements
+        <br />
+        <hr>
+        <br />
+        (1) Using CSS grid is required for the new version of your portfolio. The entire website does not have to be written with CSS grid but it must be considerably and meaningfully utilized. It is also recommended that you also use Flexbox as they work very well together
+        <br />
+        <br />
+        (2) You should <u>NOT</u> use a CSS library (Bootstrap, Tailwind, etc.) to build the new version of your website. CSS Libraries can disincentivize new programmers to learn and the point is to improve our skills/understanding overall.
+        <br />
+        <br />
+        (3) Your website should have a section for your older work from CC Lab and another for the work that you'll be doing this semester in Advanced CC Lab. Similar to the previous portfolio assignment, you should also have an <u>About</u> page and <u>a fourth page that includes any topic of your choice</u>. In total you should have at least 4 pages. How you choose to create the sections of your website is up to you. 
+        <br />
+        <br />
+        (4) The new version of your portfolio should be added to Github and deployed via Github Pages. It is up to you if you want to overwrite your existing portfolio from the CC Lab or create an entirely new repo. 
+        <br />
+        <br />
+        <hr>
+        
+
+        <br />
+        <br />
+        
+      </p>
+
+      <h2>Required Reading</h2>
+      <p>
+        (1)
+        <a target="_blank"
+          href="https://drive.google.com/file/d/1Z-kjCk68D6LlS7qtZ7xwO5NBlaMGEsij/view?usp=sharing"
+          >This is Not My Beautiful House</a
+        >, Everest Pipkin<br />
+        (3) Read
+        <a target="_blank"
+          href="https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/"
+          >My website is a shifting house next to a river of knowledge. What
+          could yours be?</a
+        >, Laurel Schwulst
+        <br />
+        (4)
+        <a target="_blank" href="https://html.energy/podcast.html>"
+          >HTML Energy: Any episode of your choice</a
+        >
+      </p>
+
+      <h2>References</h2>
+      <p>
+        (1)
+        <a target="_blank" href="https://americanartist.us/works/my-blue-window"
+          >My Blue Window</a
+        >
+        , American Artist
+        <br />
+        (2)
+        <a target="_blank" href="https://yuehaojiang.com/test_print-obj">test_print.obj</a>,
+        Yuehao Jiang
+        <br />
+        (3)
+        <a target="_blank" href="https://www.katehollenbach.com/infinite-scroll/"
+          >Infinite Scroll</a
+        >, Kate Hollenbach
+        <br />
+        (4)
+        <a target="_blank" href="https://clickclickclick.click/">Click Click Click</a>, Studio
+        Moniker
+        <br />
+        (5)
+        <a target="_blank"
+          href="https://www.bustle.com/p/dating-app-waving-uses-your-voice-in-profiles-instead-of-pictures-8505072"
+          >Waving</a
+        >
+      </p>
+
+      <h2>Resources</h2>
+      <p>
+        (1)
+        <a target="_blank" href="https://www.w3schools.com/css/">w3 schools CSS tutorial</a>
+        <br />
+        (2)
+        <a target="_blank" href="https://www.w3schools.com/html/">w3 schools HTML tutorial</a>
+        <br />
+        (3)
+        <a href="#flex-resources">CSS Flexbox Resources</a>
+        <br />
+        (4)
+        <a href="#grid-resources">CSS Grid Resources</a>
+        <br />
+        <br />
+      </p>
+      <h2>Timeline &amp Deliverables</h2>
+      <p>
+        1/30 | 1/31 : Submit a drawing + written proposal for Project #1 to Canvas
+        <br />
+        2/06 | 2/07 : Complete Project #1 - 
+        <br />
+
+      </p>
+
+      <h2>Submission Guidelines</h2>
+      <p>
+        Submit link to final version of Github Pages website on Canvas
+        <br />
+      </p>
+
+      <h2>Design Constraints</h2>
+      <p>
+        (1) You must have at least 4 different pages <br />
+        (2) Your website must be online <br />
+        (3) Your website must rely soley on HTML [&] CSS <br />
+      </p>
+
+      <br/>
+      <br/>
+      
+      <h1>Study Guide</h1>
+
+      <h2>Table of Content</h2>
+      <p>
+        (1) <a href="#dom">Interacting with the DOM</a><br />
+        (2) <a href="#html">HTML Basics</a><br />
+        (3) <a href="#css">CSS Basics</a><br />
+        (4) <a href="#flexbox">CSS Flexbox</a><br />
+        (5) <a href="#grid">CSS Grid</a><br />
+      </p>
+
+      <div id="dom"><h2>Interacting with the DOM</h2></div>
+
+      <p>
+        Whenever a web page is loaded, the browser creates a Document Object
+        Model (DOM) for the loaded page. DOM arranges all the elements on the
+        web page into a tree diagram &mdash;
+      </p>
+      <div class="full-width-box">
+        <img src="https://www.w3schools.com/js/pic_htmltree.gif" />
+      </div>
+      <p>
+        And the amazing part is, we can interact with the elements on this tree
+        diagram from our sketch.js! If you visit the p5 reference's
+        <a href="https://p5js.org/reference/#group-DOM">DOM section</a>, you
+        will find a number of examples.
+      </p>
+      <div id="html"><h2>HTML Basics</h2></div>
+      <p>
+        Reference the slides below for a primer on HTML
+      </p>
+
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT1iR6hZkxGQFMXBJa5SBwQU4O5RntzdUQ322dEfv8vl_j_TGHk0GsPHY-IhVKOGX4XOdPEmKSIJg2N/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+      
+
+      <div id="css"><h2>CSS Basics</h2></div>
+      <p>
+        Reference the slides below for a primer on CSS
+      </p>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQhuNzx0XNyzJeI-xqT8OFLMRELfDfjftz0CPlZuwfYsJPmGd2Y6ycNMcjTHRfDj7aX8V9R9alCUQva/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+      
+    <div id="flexbox"><h2>CSS Flexbox</h2></div>
+    <div class="flex">
+      <ul>
+        <li>When working with flexbox you need to think in terms of two axes — the main axis and the cross axis. Everything we do with flexbox refers back to these axes, so it is worth understanding how they work from the outset.</li>
+        <li>
+          The main axis is defined by flex-direction, which has four possible values:
+          <ul>
+            <li>row</li>
+            <li>row-reverse</li>
+            <li>column</li>
+            <li>column-reverse</li>
+          </ul>
+        </li>
+        <li>The cross axis runs perpendicular to the main axis, therefore if your flex-direction (main axis) is set to row or row-reverse the cross axis runs down the columns.</li>
+      </ul>
+      <img src="https://cdn.glitch.global/00ec483d-7fc5-4281-9249-07af191bdb0f/Screenshot%202025-01-14%20153722.png?v=1736887358845" alt="flexbox">
+    </div>
+    <hr>
+    <h3>Flexbox properties</h3>
+    <div class="flex">
+      <ul>
+        <li>display defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.</li>
+        <li>flex-direction establishes the main-axis, thus defining the direction flex items are placed in the flex container.</li>
+        <li>By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap with flex-wrap</li>
+        <li>flex-flow is a shorthand for the flex-direction and flex-wrap properties, The default value is row nowrap.</li>
+      </ul>
+      <img src="https://cdn.glitch.global/00ec483d-7fc5-4281-9249-07af191bdb0f/Screenshot%202025-01-14%20154047.png?v=1736887360824" alt="flexbox">
+    </div>
+   
+    <hr>
+    <h3>justify-content</h3>
+    <div class="flex">
+      <ul>
+        <li>This justify-content property handles the alignment of flex items on the main axis of the flex container.
+        </li>
+        <li>You can use it to take care of how space is distributed on the main axis. This property takes any of the following values:
+          <ul>
+            <li>flex-start (default value)
+            </li>
+            <li>flex-end
+            </li>
+            <li>center</li>
+            <li>space-between</li>
+            <li>space-around</li>
+            <li>space-evenly</li>
+          </ul>
+        </li>
+      </ul>
+      <img src="https://cdn.glitch.global/00ec483d-7fc5-4281-9249-07af191bdb0f/Screenshot%202025-01-14%20154107.png?v=1736887366728" alt="flexbox">
+    </div>
+
+      <hr>
+      <h3>align-items</h3>
+    <div class="flex">
+      <ul>
+        <li>The align-items property handles the alignment of flex items on the cross-axis of the flex container. It can take any of the following values
+          <ul>
+            <li>stretch (default value)
+            </li>
+            <li>flex-start
+            </li>
+            <li>	flex-end
+            </li>
+            <li>center</li>
+            <li>baseline</li>
+          </ul>
+        </li>
+      </ul>
+      <img src="https://cdn.glitch.global/00ec483d-7fc5-4281-9249-07af191bdb0f/Screenshot%202025-01-14%20154118.png?v=1736887371334" alt="flexbox">
+    </div>
+    <hr>
+    <h3>align-content </h3>
+    <div class="flex">
+      <ul>
+        <li>When you have a flex container with wrap (or more than one flex line), you may need to align the lines to distribute the space as you want. That is when you use align-content. This property can take any of the following values
+          <ul>
+            <li>stretch (default value)
+            </li>
+            <li>flex-start
+            </li>
+            <li>	flex-end
+            </li>
+            <li>center</li>
+            <li>space-between</li>
+            <li>space-evenly</li>
+            <li>space-around</li>
+          </ul>
+        </li>
+      </ul>
+      <img src="https://cdn.glitch.global/00ec483d-7fc5-4281-9249-07af191bdb0f/Screenshot%202025-01-14%20154134.png?v=1736887376011" alt="flexbox">
+    </div>
+    <hr>
+    <h3>gap, row-gap, column-gap</h3>
+    <div class="flex">
+      <ul>
+        <li>The gap property explicitly controls the space between flex items. It applies that spacing only between items not on the outer edges.
+        </li>
+        <li>
+          Example
+          <ul>
+            <li><img src="https://cdn.glitch.global/00ec483d-7fc5-4281-9249-07af191bdb0f/Screenshot%202025-01-14%20160613.png?v=1736888782121" alt="code"></li>
+          </ul>
+        </li>
+      </ul>
+      <img src="https://cdn.glitch.global/00ec483d-7fc5-4281-9249-07af191bdb0f/Screenshot%202025-01-14%20154146.png?v=1736887381265" alt="flexbox">
+    </div>
+    <hr>
+    <h3 id="flex-resources">Flexbox Online Resources</h3>
+    <ul>
+      <li>CSS Tricks - <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">A Complete Guide to Flexbox</a></li>
+      <li>mdn web docs - 
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" target="_blank">Flexbox</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox" target="_blank">Basic concepts of Flexbox</a>
+          </li>
+        </ul>
+      </li>
+      <li>freeCodeCamp - <a href="https://www.freecodecamp.org/news/the-css-flexbox-handbook/" target="_blank">The CSS Flexbox Handbook</a></li>
+      <li>DigitalOcean - 
+        <ul>
+          <li><a href="https://www.digitalocean.com/community/cheatsheets/css-flexbox" target="_blank">A CSS Flexbox Cheatsheet</a></li>
+          <li><a href="https://www.digitalocean.com/community/tutorials/css-centering-using-flexbox" target="_blank">Centering Things Using Flexbox</a></li>
+        </ul>
+      </li>
+      <li>W3C - <a  target="_blank" href="https://www.w3.org/TR/css-flexbox-1/">CSS Flexible Box Layout Module Level 1</a></li>
+    </ul>
+    <hr>
+    <div id="grid"><h2>CSS Grid</h2></div>
+    <div class="flex">
+      <ul>
+        <li>A grid is a collection of horizontal and vertical lines creating a pattern against which we can line up our design elements
+        </li>
+        <li>They help us to create layouts in which our elements won't jump around or change width as we move from page to page, providing greater consistency on our websites.</li>
+        <li>A grid will typically have columns, rows, and then gaps between each row and column. The gaps are commonly referred to as gutters.which is horizontally-based).</li>
+      </ul>
+      <img src="https://cdn.glitch.global/00ec483d-7fc5-4281-9249-07af191bdb0f/Screenshot%202025-01-14%20164108.png?v=1736891078941" alt="grid">
+    </div>
+    <hr>
+    <h2>Grid Terminology</h2>
+    <ul>
+      <li>Grid Container - The element on which display: grid is applied. It’s the direct parent of all the grid items. In this example container is the grid container.</li>
+      <li>Grid Item - The children (i.e. direct descendants) of the grid container. Here the item elements are grid items, but sub-item isn’t.</li>
+      <li>Grid Line - The dividing lines that make up the structure of the grid. They can be either vertical (“column grid lines”) or horizontal (“row grid lines”) and reside on either side of a row or column.</li>
+      <li>Grid Cell - The space between two adjacent row and two adjacent column grid lines. It’s a single “unit” of the grid.</li>
+      <li>Grid Track - The space between two adjacent grid lines. You can think of them as the columns or rows of the grid.</li>
+      <li>Grid Area - The total space surrounded by four grid lines. A grid area may be composed of any number of grid cells.</li>
+    </ul>
+    <hr>
+    <h2>Primary Grid Properties</h2>
+    <div class="flex">
+      <ul>
+        <li>Similarly to flexbox, the source order of the grid items doesn’t matter. Your CSS can place them in any order, which makes it super easy to rearrange your grid with media queries.
+        </li>
+        <li>Unlike Flexbox, the items will not immediately look any different. Declaring display: grid or display: inline-grid gives you a one column grid, so your items will continue to display one below the other as they do in normal flow.</li>
+        <li>To see something that looks more grid-like, we'll need to set the column and row sizes with grid-template-columns and grid-template-rows, and then place its child elements into the grid with grid-column and grid-row.</li>
+      </ul>
+      <img src="https://cdn.glitch.global/00ec483d-7fc5-4281-9249-07af191bdb0f/Screenshot%202025-01-14%20164133.png?v=1736891084724" alt="grid">
+    </div>
+    <hr>
+    <h2>grid-template-columns</h2>
+    <div class="flex">
+      <ul>
+        <li>The grid-template-columns CSS property defines the line names and track sizing functions of the grid columns</li>
+        <li>Property values
+          <ul>
+            <li>fr - fr is a fractional unit and 1fr is for 1 part of the available space.</li>
+            <li>auto - The size of the columns is determined by the size of the container and on the size of the content of the items in the column. Often is interchangeable with fr</li>
+            <li>max-content - sets the size of each column to depend on the largest item in the column</li>
+            <li>min-content - Sets the size of each column to depend on the smallest item in the column</li>
+            <li>length - Sets the size of the columns, by using a legal length value.</li>
+            <li>initial - Sets this property to its default value.</li>
+            <li>inherit - Inherits this property from its parent element.</li>
+            <li>none - Default value. Columns are created if needed</li>
+          </ul>
+        </li>
+      </ul>
+      <img src="https://cdn.glitch.global/00ec483d-7fc5-4281-9249-07af191bdb0f/Screenshot%202025-01-14%20164149.png?v=1736891088403" alt="grid">
+    </div>
+    <hr>
+    <h2>grid-template-rows</h2>
+    <div class="flex">
+      <ul>
+        <li>The grid-template-rows CSS property defines the line names and track sizing functions of the grid rows.</li>
+        <li>Property values
+          <ul>
+            <li>fr - fr is a fractional unit and 1fr is for 1 part of the available space.</li>
+            <li>auto - The size of the rows is determined by the size of the container, and on the size of the content of the items in the row</li>
+            <li>max-content - Sets the size of each row to depend on the largest item in the row</li>
+            <li>min-content - Sets the size of each row to depend on the smallest item in the row</li>
+            <li>length - Sets the size of the rows, by using a legal length value.</li>
+            <li>none - No size is set. Rows are created if needed</li>
+          </ul>
+        </li>
+      </ul>
+      <img src="https://cdn.glitch.global/00ec483d-7fc5-4281-9249-07af191bdb0f/Screenshot%202025-01-14%20164206.png?v=1736891092021" alt="grid">
+    </div>
+    <hr>
+    <h2>grid-area & grid-template-areas</h2>
+    <div class="flex">
+      <ul>
+        <li>The grid-area CSS shorthand property specifies a grid item's size and location within a grid by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the edges of its grid area
+          <ul>
+            <li>If four {grid-line} values are specified, grid-row-start is set to the first value, grid-column-start is set to the second value, grid-row-end is set to the third value, and grid-column-end is set to the fourth value.</li>
+          </ul>
+        </li>
+        <li>The grid-template-areas CSS property specifies named grid areas, establishing the cells in the grid and assigning them names.</li>
+        <li>Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.
+          <ul>
+            <li>Each row in your declaration needs to have the same number of cells.</li>
+            <li>You can use any number of adjacent periods to declare a single empty cell. As long as the periods have no spaces between them they represent a single cell.</li>
+          </ul>
+        </li>
+      </ul>
+      <img src="https://cdn.glitch.global/00ec483d-7fc5-4281-9249-07af191bdb0f/Screenshot%202025-01-14%20164224.png?v=1736891095862" alt="grid">
+    </div>
+    <hr>
+    <h2>column-gap & row-gap & gap</h2>
+    <div class="flex">
+      <ul>
+        <li>The column-gap CSS property sets the size of the gap (gutter) between an element's columns.</li>
+        <li>The row-gap CSS property sets the size of the gap (gutter) between an element's rows.</li>
+        <li>The gap CSS shorthand property sets the gaps (gutters) between rows and columns.</li>
+        <li>For each of these properties the gutters are only created between the columns/rows, not on the outer edges.</li>
+      </ul>
+      <img src="https://cdn.glitch.global/00ec483d-7fc5-4281-9249-07af191bdb0f/Screenshot%202025-01-14%20164303.png?v=1736891099322" alt="grid">
+    </div>
+    <hr>
+    <h2>justify-items & align-items & place-items</h2>
+    <div class="flex">
+      <ul>
+        <li>Similar to Flexbox, you can use the properties justify-items, align-items, and place-items to align your grid items in different ways</li>
+        <li>justify-items - aligns the items inside their grid areas on the inline axis</li>
+        <li>align-item - controls the alignment of items on the Block Axis within their grid area.</li>
+        <li>place-items - place-items sets both the align-items and justify-items properties in a single declaration.
+          <ul>
+            <li>stretch(default) – fills the whole width of the cell</li>
+            <li>start – aligns items to be flush with the start edge of their cell</li>
+            <li>end – aligns items to be flush with the end edge of their cell</li>
+            <li>center – aligns items in the center of their cell</li>
+          </ul>
+        </li>
+      </ul>
+      <img src="https://cdn.glitch.global/00ec483d-7fc5-4281-9249-07af191bdb0f/Screenshot%202025-01-14%20164321.png?v=1736891103454" alt="grid">
+    </div>
+    <hr>
+    <h2>justify-content & align-content & place-content</h2>
+    <div class="flex">
+      <ul>
+        <li>You can also use the properties similar to flexbox justify-content, align-content, and place-content to control the placement of the entire grid itself.</li>
+        <li>justify-content - defines how the browser distributes space between and around content items along the inline axis of a grid</li>
+        <li>align-content - sets the distribution of space between and around content items along a grid's block axis.</li>
+        <li>place-content - align content along both the block and inline directions at once in a grid
+          <ul>
+            <li>start – aligns the grid to be flush with the start edge of the grid container</li>
+            <li>end – aligns the grid to be flush with the end edge of the grid container</li>
+            <li>center – aligns the grid in the center of the grid container</li>
+            <li>stretch – resizes the grid items to allow the grid to fill the full width of the grid container</li>
+            <li>space-around – places an even amount of space between grid items, with half-sized spaces on the far ends</li>
+            <li>space-between – places an even amount of space between each grid item, with no space at the far ends</li>
+            <li>space-evenly – places an even amount of space between each grid item, including the far ends</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <hr>
+    <h2>Properties for Children</h2>
+    <div class="flex">
+      <ul>
+        <li>Child properties in a flex layout are called grid items</li>
+        <li>Similar to grid-area, there are other properties which can be used on the grid items
+          <ul>
+            <li>justify-self aligns a grid item inside a cell along the inline (row) axis</li>
+            <li>align-self aligns a grid item inside a cell along the block (column) axis</li>
+            <li>place-self sets both the align-self and justify-self properties in a single declaration.</li>
+          </ul>
+        </li>
+      </ul>
+      <img src="https://cdn.glitch.global/00ec483d-7fc5-4281-9249-07af191bdb0f/Screenshot%202025-01-14%20164334.png?v=1736891106941" alt="grid">
+    </div>
+    <hr>
+    <h2>Special Units & Functions</h2>
+    <div class="flex">
+      <ul>
+        <li>Sizing Keywords
+          <ul>
+            <li>The min-content sizing keyword represents the intrinsic minimum width of the content. </li>
+            <li>The max-content sizing keyword represents the intrinsic maximum width or height of the content.</li>
+            <li>The auto keyword is a lot like fr units, except that they “lose” the fight in sizing against fr units when allocating the remaining space.</li>
+            <li>The fr keyword is used often within grid and mean “portion of the remaining space”. Fr values mix well with fixed and percentage values</li>
+          </ul>
+        </li>
+        <li>Sizing Functions
+          <ul>
+            <li>The fit-content() function uses the space available, but never less than min-content and never more than max-content.</li>
+            <li>The minmax() function sets a minimum and maximum value for what the length is able to be. This is useful for in combination with relative units and is used often for responsive design</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <hr>
+    <h2>Special Units & Functions cont.</h2>
+    <ul>
+      <li>With the masonry layout, rather than sticking to a strict grid with gaps being left after shorter items, the items in the following row rise up to completely fill the gaps.</li>
+      <li>The subgrid is a way to allow children of a grid (grid-items) to have a grid of their own, or a nested grid</li>
+      <li>The repeat() function can replace typing the same sizing keyword multiple times. The first arguments sets the number of times to repeat and the second sets the size. repeat() can also be combined with auto-fill and auto-fit
+        <ul>
+          <li>auto-fill FILLS the row with as many columns as it can fit.</li>
+          <li>auto-fit FITS the CURRENTLY AVAILABLE columns into the space by expanding them so that they take up any available space.</li>
+          <li>Using repeat(), auto-fill, and minmax together can give you a very powerful and flexible functionality
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="full-width-box">
+      <img src="https://cdn.glitch.global/00ec483d-7fc5-4281-9249-07af191bdb0f/Screenshot%202025-01-14%20171047.png?v=1736892656300" alt="grid" style="width:300px;height:auto;">
+      <img src="https://cdn.glitch.global/00ec483d-7fc5-4281-9249-07af191bdb0f/Screenshot%202025-01-14%20164416.png?v=1736891111132" alt="grid" style="width:100%;height:100%;">
+    </div>
+    <hr>
+    <h3 id="grid-resources">Grid Online Resources</h3>
+    <ul>
+      <li><a href="https://www.youtube.com/layoutland" target="_blank">Layout Land</a> (videos)</li>
+      
+      <li>mdn web docs: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids" target="_blank">Grids</a></li>
+      <li>CSS Tricks - <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">A Complete Guide to Grid</a></li>
+      <li>freeCodeCamp - <a href="https://www.freecodecamp.org/news/complete-guide-to-css-grid/" target="_blank">The CSS Grid Handbook</a></li>
+      <li><a href="https://www.joshwcomeau.com/css/interactive-guide-to-grid/" target="_blank">An Interactive Guide to CSS Grid</a></li>
+      <li>DigitalOcean - 
+        <ul>
+          <li><a href="https://www.digitalocean.com/community/tutorials/css-css-grid-layout-intro" target="_blank">CSS Grid Layout: Introduction</a></li>
+        </ul>
+      </li>
+      <li>W3C - <a  target="_blank" href="https://www.w3schools.com/css/css_grid.asp">CSS Grid Layout Module</a></li>
+    </ul>
     </div>
   </body>
 </html>
