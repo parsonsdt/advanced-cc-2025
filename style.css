@@ -240,3 +240,7 @@ img.profile{
 .no-margin {
   margin: 0;
 }
+
+.website-title a {
+  color: #E82E21;
+}
