@@ -44,11 +44,17 @@ body {
     border: 1px solid #000;
 }
 
+/*****************/
+/* Dfault Grid */
+/*****************/
 .default {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
 }
 
+/*****************/
+/* Inline Grid */
+/*****************/
 .inline {
     display: inline-grid;
     grid-template-columns: auto auto auto;
@@ -58,40 +64,90 @@ body {
     width: 50px;
 }
 
+/*****************/
+/* Grid Gap */
+/*****************/
+.grid-gap {
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 10px;
+    background-color: grey;
+}
+
+/*****************/
+/* MinMax */
+/*****************/
+.min-max {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+/*****************/
+/* Grid Area */
+/*****************/
 .grid-area-section {
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
 
-.blue-2 {
+.grid-area-section .green {
+    grid-area: 1 / 1 / span 2 / span 2;
+}
+.grid-area-section .blue-2 {
+    grid-area: 3 / 1 / span 1 / span 4;
+}
+
+/*****************/
+/* Grid Template Areas */
+/*****************/
+.grid-template-area-section .blue-2 {
     grid-area: 2 / 1 / span 2 / span 3;
-  }
+}
 
 .grid-template-area-section {
-    grid-template-areas: 'myArea myArea . . .';
+    grid-template-areas: 
+    "header header header"
+    "sidebar main main"
+    "footer footer footer";
 }
 
 .grid-template-area-section .red {
-    grid-area: red;
+    grid-area: header;
 }
 
 .grid-template-area-section .blue {
-}
-
-.grid-template-area-section .green {
+    grid-area: sidebar;
 }
 
 .grid-template-area-section .yellow {
+    grid-area: main;
 }
 
-.grid-template-area-section .red-2 {
+.grid-template-area-section .green {
+    grid-area: footer;
 }
 
-.grid-template-area-section .blue-2 {
+/*****************/
+/* Justify Items */
+/*****************/
+.justify-items {
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
 }
 
-.grid-template-area-section .green-2 {
+.justify-items .box {
+    width: 80px;
 }
 
-.grid-template-area-section .yellow-2 {
+/*****************/
+/* Align Items */
+/*****************/
+.align-items {
+    height: 360px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    /* justify-items: center; */
+}
+
+.align-items .box {
+    width: 80px;
 }

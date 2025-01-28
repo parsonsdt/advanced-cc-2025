@@ -21,7 +21,7 @@
                 <div class="yellow box">7</div>
                 <div class="green box">8</div>
               </div>
-              <p>*A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+              <p>*A Grid Layout must have a parent element with the <b>display</b> property set to <em>grid</em> or <b>inline-grid</b>.</p>
 
               <p>*Direct child element(s) of the grid container automatically becomes grid items.</p>
 
@@ -38,7 +38,36 @@
                 <div class="yellow box">7</div>
                 <div class="green box">8</div>
               </div>
-              <p>*Use display: inline-grid; to make an inline grid container</p>
+              <p>*Use <b>display: inline-grid;</b> to make an inline grid container</p>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-left">
+            <h3>Grid Column/ Gap</h3>
+            <div class="grid grid-gap">
+                <div class="red box">1</div>
+                <div class="blue box">2</div>
+                <div class="yellow box">3</div>
+                <div class="green box">4</div>
+                <div class="red box">5</div>
+                <div class="blue box">6</div>
+                <div class="yellow box">7</div>
+              </div>
+              <p>*The <b>grid-gap</b> property sets the size of the gap between rows and columns in a grid layout</p>
+            <p>*Here we give a gap between the row at 10px and columns at 50px</p>
+            <p>*The column and row can be set separately or together</p>
+        </div>
+        <div class="section-right">
+            <h3>MinMax() + Auto-fill/fit</h3>
+            <div class="grid min-max">
+                <div class="red box">1</div>
+                <div class="blue box">2</div>
+                <div class="yellow box">3</div>
+                <div class="green green-2 box">4</div>
+                <div class="red red-2 box">5</div>
+                <div class="blue blue-2 box">6</div>
+              </div>
+              <p>*The CSS <b>minmax() function</b> is used with CSS grids, and defines a size range greater than or equal to a min value and less than or equal to a max value.</p>
         </div>
     </div>
     <div class="section">
@@ -48,76 +77,53 @@
                 <div class="red box">1</div>
                 <div class="blue box">2</div>
                 <div class="yellow box">3</div>
-                <div class="green green-2 box">4</div>
+                <div class="green box">4</div>
                 <div class="red red-2 box">5</div>
                 <div class="blue blue-2 box">6</div>
                 <div class="yellow yellow-2 box">7</div>
               </div>
-              <p>*You can use the <em>grid-area</em> property to specify where to place an item.</p>
+              <p>*You can use the <b>grid-area</b> property to specify where to place an item.</p>
                 <p>*The syntax is grid-row-start / grid-column-start / grid-row-end / grid-column-end.</p>
-            <p>*blue-2 will start on row 2 and column 1, and span 2 rows and 3 columns:</p>
+            <p>*4 will start on row 1 and column 1, and span 2 rows and 2 columns:</p>
+            <p>*6 will start on row 3 and column 1, and span 1 rows and 4 columns:</p>
         </div>
         <div class="section-right">
             <h3>Grid-Template-Area</h3>
             <div class="grid grid-template-area-section">
-                <div class="red box">1</div>
-                <div class="blue box">2</div>
-                <div class="yellow box">3</div>
-                <div class="green green-2 box">4</div>
-                <div class="red red-2 box">5</div>
-                <div class="blue blue-2 box">6</div>
-                <div class="yellow yellow-2 box">7</div>
+                <div class="red box">Header</div>
+                <div class="blue box">Sidebar</div>
+                <div class="yellow box">Main</div>
+                <div class="green box">Footer</div>
               </div>
-              <p>*You can use the <em>grid-template-areas</em> property to set up a grid layout.</p>
-            <p>*Item1, is called "myArea" and will take up the place of two columns (out of five):</p>
-            </div>
+              <p>*The <b>grid-template-areas</b> CSS property allows you to define and name the cells (or “areas”) in a CSS grid container.</p>
+            <p>*To place elements in there, we need to assign the named grid area to an element using the grid-area property on the element we’re placing</p>
+        </div>
     </div>
     <div class="section">
         <div class="section-left">
-            <h3>Align-Content</h3>
-            <div class="flexbox align-content">
-                <div class="red box">RED</div>
-                <div class="blue box">BLUE</div>
-                <div class="yellow box">YELLOW</div>
-                <div class="green box">GREEN</div>
-                <div class="red box">RED</div>
-                <div class="blue box">BLUE</div>
-                <div class="yellow box">YELLOW</div>
-                <div class="green box">GREEN</div>
-                <div class="red box">RED</div>
-                <div class="blue box">BLUE</div>
-                <div class="yellow box">YELLOW</div>
-                <div class="green box">GREEN</div>
-            </div>
-            <p>*align-content property sets the distribution of space between and around content items along a flexbox's cross axis, or a grid or block-level element's block axis</p>
-            <ul>
-                <li><b>stretch (default)</b></li>
-                <li><b>start</b></li>
-                <li><b>center</b></li>
-                <li><b>end</b></li>
-                <li><b>space-between</b></li>
-                <li><b>space-evenly</b></li>
-                <li><b>space-around</b></li>
-            </ul>
+            <h3>Justify-Items (right)</h3>
+            <div class="grid justify-items">
+                <div class="red box">1</div>
+                <div class="blue box">2</div>
+                <div class="yellow box">3</div>
+                <div class="green box">4</div>
+
+              </div>
+              <p>*The <b>justify-items</b> property is set on the grid container to give child elements (grid items) alignment in the inline direction.</p>
+              <p>*You can set the justify to the either of the values <b>normal | stretch | start | left | center | end | right</b> and others</p>
+              <p>*<b>place-items</b> sets both the align-items and justify-items properties in a single declaration.</p>
         </div>
         <div class="section-right">
-            <div class="section-right">
-                <h3>Gap / Row-Gap / Column-Gap</h3>
-                <div class="flexbox gap">
-                    <div class="red box">RED</div>
-                    <div class="blue box">BLUE</div>
-                    <div class="yellow box">YELLOW</div>
-                    <div class="green box">GREEN</div>
-                </div>
-                <p>*align-items property handles the alignment of flex items on the cross-axis of the flex container</p>
-                <ul>
-                    <li><b>stretch (default)</b></li>
-                    <li><b>start</b></li>
-                    <li><b>center</b></li>
-                    <li><b>end</b></li>
-                    <li><b>baseline</b></li>
-                </ul>
-            </div>
+            <h3>Align-Items (center)</h3>
+            <div class="grid align-items">
+                <div class="red box">Header</div>
+                <div class="blue box">Sidebar</div>
+                <div class="yellow box">Main</div>
+                <div class="green box">Footer</div>
+              </div>
+              <p>*The <b>align-items</b> property specifies the default alignment for items inside a flexbox or grid container.</p>
+            <p>*For this property to have any alignment effect, the items need available space around themselves in the appropriate direction.</p>
+            <p>*<b>place-items</b> sets both the align-items and justify-items properties in a single declaration.</p>
         </div>
     </div>
 </body>
