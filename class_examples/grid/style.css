@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #BCD8C1;
+  }
+
+.section {
+    height: 100vh;
+    display: flex;
+}
+
+.section-left, .section-right {
+    height: 100%;
+    width: 50vw;
+    border: 1px #000 solid;
+}
+
+.box {
+    height: 72px;
+    width: auto;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.green {
+    background-color: green;
+}
+.yellow {
+    background-color: yellow;
+}
+
+.grid {
+    display: grid;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.default {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.inline {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.inline .box {
+    width: 50px;
+}
+
+.grid-area-section {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.blue-2 {
+    grid-area: 2 / 1 / span 2 / span 3;
+  }
+
+.grid-template-area-section {
+    grid-template-areas: 'myArea myArea . . .';
+}
+
+.grid-template-area-section .red {
+    grid-area: red;
+}
+
+.grid-template-area-section .blue {
+}
+
+.grid-template-area-section .green {
+}
+
+.grid-template-area-section .yellow {
+}
+
+.grid-template-area-section .red-2 {
+}
+
+.grid-template-area-section .blue-2 {
+}
+
+.grid-template-area-section .green-2 {
+}
+
+.grid-template-area-section .yellow-2 {
+}

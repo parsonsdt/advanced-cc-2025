@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CSS Grid Examples</h1>
+    <div class="section">
+        <div class="section-left">
+            <h3>Default Grid</h3>
+            <div class="grid default">
+                <div class="red box">1</div>
+                <div class="blue box">2</div>
+                <div class="yellow box">3</div>
+                <div class="green box">4</div>
+                <div class="red box">5</div>
+                <div class="blue box">6</div>
+                <div class="yellow box">7</div>
+                <div class="green box">8</div>
+              </div>
+              <p>*A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+
+              <p>*Direct child element(s) of the grid container automatically becomes grid items.</p>
+
+        </div>
+        <div class="section-right">
+            <h3>Inline Grid</h3>
+            <div class="grid inline">
+                <div class="red box">1</div>
+                <div class="blue box">2</div>
+                <div class="yellow box">3</div>
+                <div class="green box">4</div>
+                <div class="red box">5</div>
+                <div class="blue box">6</div>
+                <div class="yellow box">7</div>
+                <div class="green box">8</div>
+              </div>
+              <p>*Use display: inline-grid; to make an inline grid container</p>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-left">
+            <h3>Grid-Area</h3>
+            <div class="grid grid-area-section">
+                <div class="red box">1</div>
+                <div class="blue box">2</div>
+                <div class="yellow box">3</div>
+                <div class="green green-2 box">4</div>
+                <div class="red red-2 box">5</div>
+                <div class="blue blue-2 box">6</div>
+                <div class="yellow yellow-2 box">7</div>
+              </div>
+              <p>*You can use the <em>grid-area</em> property to specify where to place an item.</p>
+                <p>*The syntax is grid-row-start / grid-column-start / grid-row-end / grid-column-end.</p>
+            <p>*blue-2 will start on row 2 and column 1, and span 2 rows and 3 columns:</p>
+        </div>
+        <div class="section-right">
+            <h3>Grid-Template-Area</h3>
+            <div class="grid grid-template-area-section">
+                <div class="red box">1</div>
+                <div class="blue box">2</div>
+                <div class="yellow box">3</div>
+                <div class="green green-2 box">4</div>
+                <div class="red red-2 box">5</div>
+                <div class="blue blue-2 box">6</div>
+                <div class="yellow yellow-2 box">7</div>
+              </div>
+              <p>*You can use the <em>grid-template-areas</em> property to set up a grid layout.</p>
+            <p>*Item1, is called "myArea" and will take up the place of two columns (out of five):</p>
+            </div>
+    </div>
+    <div class="section">
+        <div class="section-left">
+            <h3>Align-Content</h3>
+            <div class="flexbox align-content">
+                <div class="red box">RED</div>
+                <div class="blue box">BLUE</div>
+                <div class="yellow box">YELLOW</div>
+                <div class="green box">GREEN</div>
+                <div class="red box">RED</div>
+                <div class="blue box">BLUE</div>
+                <div class="yellow box">YELLOW</div>
+                <div class="green box">GREEN</div>
+                <div class="red box">RED</div>
+                <div class="blue box">BLUE</div>
+                <div class="yellow box">YELLOW</div>
+                <div class="green box">GREEN</div>
+            </div>
+            <p>*align-content property sets the distribution of space between and around content items along a flexbox's cross axis, or a grid or block-level element's block axis</p>
+            <ul>
+                <li><b>stretch (default)</b></li>
+                <li><b>start</b></li>
+                <li><b>center</b></li>
+                <li><b>end</b></li>
+                <li><b>space-between</b></li>
+                <li><b>space-evenly</b></li>
+                <li><b>space-around</b></li>
+            </ul>
+        </div>
+        <div class="section-right">
+            <div class="section-right">
+                <h3>Gap / Row-Gap / Column-Gap</h3>
+                <div class="flexbox gap">
+                    <div class="red box">RED</div>
+                    <div class="blue box">BLUE</div>
+                    <div class="yellow box">YELLOW</div>
+                    <div class="green box">GREEN</div>
+                </div>
+                <p>*align-items property handles the alignment of flex items on the cross-axis of the flex container</p>
+                <ul>
+                    <li><b>stretch (default)</b></li>
+                    <li><b>start</b></li>
+                    <li><b>center</b></li>
+                    <li><b>end</b></li>
+                    <li><b>baseline</b></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
