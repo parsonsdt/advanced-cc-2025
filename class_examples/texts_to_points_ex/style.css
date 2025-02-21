@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PlaywriteNGModern';
+    src: url('PlaywriteNGModern-Regular.ttf');
+   }
+
+body {
+    margin: 0;
+    font-family: 'PlaywriteNGModern';
+}
