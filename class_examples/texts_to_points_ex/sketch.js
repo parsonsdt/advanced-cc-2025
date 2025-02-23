@@ -35,7 +35,7 @@ function setup() {
   h1.style('color', '#94FBAB');
   h1.position(w - 400, 100);
 
-  h2.style('color', '#94FBAB');
+  h2.style('color', '#5F5AA2');
   h2.position(200, h - 100);
 }
 
