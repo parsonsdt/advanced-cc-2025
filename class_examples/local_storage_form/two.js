@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // console.log("Font: " + localStorage.getItem("font"));
     // console.log("Spacing: " + localStorage.getItem("spacing"));
     // console.log("Button: " + localStorage.getItem("button"));
-    // console.log("Message: " + localStorage.getItem("message"));
+    console.log("Message: " + localStorage.getItem("message"));
 
 
     // Display the saved "name" value from localStorage
