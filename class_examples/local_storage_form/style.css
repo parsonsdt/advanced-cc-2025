@@ -1,0 +1,102 @@
+body, div, p, caption, h1,h2,h3,h4,h5,div,a {
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+body.page-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body.light {
+    background-color: #F2FBE0;
+    color: #826251;
+}
+
+body.dark {
+    background-color: #361D2E;
+    color: #F7EDF0;
+}
+
+.radio-group {
+    display: flex;
+  border: none;
+  padding: 0;
+}
+
+.audiowide-regular {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.amarante-regular {
+    font-family: "Amarante", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.monoton-regular {
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid;
+    padding: 32px;
+}
+
+.main-container.smallSpacing {
+    height: 25%;
+    width: 25%;
+}
+
+.main-container.mediumSpacing {
+    height: 50%;
+    width: 50%;
+}
+
+.main-container.largeSpacing {
+    height: 90%;
+    width: 90%;
+}
+
+.btn {
+    padding: 24px;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 32px;
+}
+
+.btn.dark {
+    border: 4px solid #F7EDF0;
+    color: #F7EDF0;
+}
+
+.btn.light {
+    border: 4px solid #826251;
+    color: #826251;
+}
+
+.btn.rounded {
+    border-radius: 12px;
+    
+    
+}
+
+.btn.standard {
+    border-style: solid;
+}
+
+.btn.dashed {
+    border-style: dashed;
+}

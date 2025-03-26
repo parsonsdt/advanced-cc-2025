@@ -3,25 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Page Custommizer Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Audiowide&family=Monoton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Local Storage Form</title>
 </head>
 <body>
 
-    <h1>Local Storage Form</h1>
-    Enter your name:<input id="name" type="text"/> 
+    <h1>Page Custommizer Form</h1>
 
-    <br>
-    Select a color:<br>
-    <fieldset>
-    Red:<input type="radio" name="myRadios" class="radio" value="red" /><br>
-    Blue:<input type="radio" name="myRadios" class="radio" value="blue" /><br>
-    Green<input type="radio" name="myRadios" class="radio" value="green" />
+    <div>1. Enter your name:</div>
+    <input id="name" type="text"/> 
+
+    <hr>
+    <div>2. Choose your page theme?</div>
+    <fieldset class="radio-group">
+    Light:<input type="radio" name="myRadios" class="radio" value="light" /><br>
+    Dark:<input type="radio" name="myRadios" class="radio" value="dark" /><br>
     </fieldset>
+    <hr>
+    <div>3. What font style should be applied?</div>
+    <select id="fontOption">
+        <option disabled selected value> -- select an option -- </option>
+        <option class="selection-option" value="audiowide">Audiowide</option>
+        <option class="selection-option" value="amarante">Amarante</option>
+        <option class="selection-option" value="monoton">Monoton</option>
+    </select>
+    <hr>
+    <div>4. How much spacing should be used?</div>
+    <fieldset class="radio-group">
+        Low: <input type="radio" name="mySpacingRadios" class="spacing-radio" value="low_space" /><br>
+        Medium: <input type="radio" name="mySpacingRadios" class="spacing-radio" value="mid_space" /><br>
+        High: <input type="radio" name="mySpacingRadios" class="spacing-radio" value="high_space" />
+    </fieldset>
+    
+    <hr>
+    <div>5. What button style do you prefer?</div>
+    <select id="buttonOption">
+        <option disabled selected value> -- select an option -- </option>
+        <option class="button-option" value="standard">Standard</option>
+        <option class="button-option" value="round">Round</option>
+        <option class="button-option" value="dashed">Outline</option>
+    </select>
+    <hr>
+    <div>6. Do you want to add a random message?</div>
+    <div>
+        <label for="scales">Yes</label>
+        <input type="checkbox" id="randomMsg" name="randomMsg" />
+    </div>
 
 
-
+    <a href="two.html">Next Page</a>
     <script src="script.js"></script>
 </body>
 </html>
